@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>function Expression</title>
+    </head>
+    <body>
+        <script>
+            // function declaration
+            //In function declaration:- you can function call after the function declaration and also before the  function declaration .
+            //But in function Expression only after the function declaration can call function.
+             show(); 
+           function show()
+           {
+                document.write("in function <br>");
+           }
+           show();
+           // function Expression
+           
+          var disp = function show(){
+            document.write("in function<br>");
+          }
+          disp();
+        </script>
+    </body>
+</html>

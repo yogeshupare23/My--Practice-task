@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Arrow Function</title>
+    </head>
+    <body>
+        <script>
+           /* An arrow expression (previously, and now incorrectly known as fat
+           arrow functoin ) has a shorter syntax compared to function expression.
+           Arrow function are always anonymous.    */
+           // Syntax :- ()=>{ statement };
+           //ex:-
+           var  myfun = () =>{
+            document.write("Welcome in Arrow Function <br>");
+           };
+           myfun();
+           // Arrow Function with parameter
+           var myfun2 = (a) =>{
+            document.write("<br>"+a);
+           }
+           myfun2(23);
+          // myfun3();
+           // Arrow Function with parameter
+           var myfun3 = (a,b) =>{
+            document.write("<br>"+a+"  "+b);
+           }
+           myfun3(23,26)
+           /*
+           var myfunN=(c)=>c;    //work
+           var myfunN=(c)=>{c};  //Not work
+           var myfunN=(c)=>{return c};  // work
+           */
+           
+        </script>
+    </body>
+</html>

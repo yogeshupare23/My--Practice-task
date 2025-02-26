@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 10px 5%;
+        }
+        table tr th{
+            text-align: right;
+            padding:5px 10px;
+        }
+        .c1{
+            border: 2px solid #999; border-radius: 7px; padding-bottom: 20px;
+            margin-top: 20px;
+        }
+        .c2{
+            background-color: gray; padding: 5px 10px; border-radius: 5px;
+        }
+
+        #table2 th{
+            text-align: center;
+            padding:5px 10px;
+            background-color: #999;
+            border-right: 2px solid #999;
+        }
+        #table2 td{
+            text-align: center;
+            padding:5px 10px;
+            background-color: #ddd;
+            border-right: 2px solid #999;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="c1">
+        <div class="c2" style="">
+            <b><big>User</big></b>
+        </div>
+        <div >
+            <form>
+                <table align="center">
+                    <tr>
+                        <th>
+                            User Id
+                        </th>
+                        <td>
+                            <input type="text" name="uid" id="uid" placeholder="Enter User Id" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            User Name
+                        </th>
+                        <td>
+                            <input type="text" name="uname" id="uname" placeholder="Enter User Name" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            User Type
+                        </th>
+                        <td>
+                            <select name="utype" id="utype">
+                                <option value="Admin">
+                                    Admin
+                                </option>
+                                <option value="Staff">
+                                    Admin
+                                </option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            Password
+                        </th>
+                        <td>
+                            <input type="password" id="pass" name="pass" placeholder="Enter Password" />
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            Re-Password
+                        </th>
+                        <td>
+                            <input type="password" id="rpass" name="rpass" placeholder="Re-Enter Password" />
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th>
+                           
+                        </th>
+                        <td>
+                            <input type="submit" id="submit" name="submit" value="Save" />
+                            <button type="reset">
+                                Reset
+                            </button>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+    <div class="c1">
+        <div class="c2">
+            <b><big>User Info</big></b>
+        </div>
+        <div style="padding: 20px; text-align: center;">
+            
+            <input type="search" name="" id="input" class="form-control" value="" required="required" title="">
+            
+        </div>
+        <table style="width: 100%;" id="table2">
+            <thead>
+                <tr>
+                    <th>User Id</th>
+                    <th>User Name</th>
+                    <th>User Type</th>
+                    <th>Option</th>
+                </tr>
+                <tr>
+                    <td>101</td>
+                    <td>AAAA</td>
+                    <td>Admin</td>
+                    <td>
+                        <button type="button">Edit</button>
+                        <button type="button">Delete</button>
+                    </td>
+                </tr>
+            </thead>
+        </table>
+    </div>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Undefind</title>
+    </head>
+    <body>
+        <h1>Undefind</h1>
+        <pre>
+            The undefind type is used for variable or object properties thet
+            either do not exist or have not been accessing a value. The only
+            value an Undefind type can have is <u>Undefind</u>
+            var a;
+            document.write(a);     //Not accessing a value - Undefind
+            document.write(b);     //Not exist - Undefind Error
+        </pre>
+        <script>
+            var a;
+            document.write("<pre> Value not assigned Undefined</pre>" );
+            document.write(a+"<br>");
+            
+            document.write("<pre> b doesnt exist  Undefined</pre>" );
+            document.write(typeof(b)+"<br>");
+           
+            document.write("<pre> Undefined Error </pre>" );
+            document.write(b+"<br>");
+        </script>
+    </body>
+</html>

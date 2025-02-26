@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Anonmous function</title>
+    </head>
+    <body>
+        <script>
+           // Anonmous function allow the creation which have no spceified name
+           //    can be stored in a Variable
+           //    can be Returnd in a Function
+           //    can be pass in a Function
+           // Store Anonmous Function in Variable
+           // Ex:-
+           var a = function(x,y){
+            document.write(x+" "+y);
+           };
+           a(10,20);
+
+           // Passing Anonmous Function as Argument          
+           
+           function disp (myfun){
+                return myfun();
+           } 
+           document.write(disp( function(){
+                return " <br>Hii yogesh";
+           }  ));
+           
+           // Returning Anonmous Function
+            function disp2(a){
+                return  function(b){
+                    return a+b;
+                };
+            }
+            var af = (disp2(10));
+            document.write( af(20))       
+    
+
+        </script>
+    </body>
+</html>

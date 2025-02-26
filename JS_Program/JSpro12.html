@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>IIFE</title>
+    </head>
+    <body>
+        <h3>Immediately Invoked Function Expression</h3>
+        <pre>/*
+            IIFE(Immediately Invoked Function Expression) is a JavaScricpt
+            function that runs as soon as it defined.
+
+            It is a design pattern which is also known as Self-Executing Anonymous
+            Function and contains two major parts. The first is the anonymous function 
+            with lexical scope enclosed within the Grouping Operator(). This prevents 
+            accessing variable within the IIFE idion as well as polluting the global scope.
+
+            The second part is creating the immediately executing expression(), through
+            which the JavaScript engine will directly interprct the function.
+            */
+           /*
+           - Avoid Creating Global variable and Functions
+           - As it doesn't defind variable and function globally so there will be no name conficts
+           - Scope is limited to thet particular function
+           */
+           //Ex:-</pre>
+        <script>
+            
+           (function () {
+                document.write("welcome in Immediately Invoked Function Expression(IIFE)function <br>"); 
+            }) ();
+            (function () {
+                let a=10;
+                document.write(a+"<br>");
+            }
+            ) ();
+            // with parameter
+            (function (a, b) {
+                document.write("A = "+a+"<br>");
+                document.write("B = "+b+"<br>");
+            }
+            ) ( 10,20);
+
+        </script>
+        
+    </body>
+</html>

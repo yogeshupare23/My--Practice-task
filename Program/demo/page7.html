@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function playvideo()
+        {
+            var v1=document.getElementById("v1");
+            var l1=document.getElementById("l1").innerText;
+            v1.src=l1;
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <audio src="../Tasks/Songs Page/Audio Songs/Pushpa/Oo Bolega Ya Oo Oo Bolega - Pushpa.mp3" controls ></audio>
+
+    </div>
+    <div>
+        <audio src="../Tasks/Songs Page/Audio Songs/RRR/Naacho Naacho - RRR.mp3" controls ></audio>
+    </div>
+    <div>
+        <video id="v1" src="../Tasks/Songs Page/Video Songs/RRR/Naacho_Naacho_Video_Song_-_RRR_-_NTR,_Ram_Charan___M_M_Kreem___SS_Rajamouli___Vi.mp4" controls width="300px" height="200px" autoplay></video>
+    </div>
+    <ul>
+        <li id="l1" onclick="playvideo()">Naacho Naacho - RRR.mp3 </li>
+        <li id="l1" onclick="playvideo()">Oo Bolega Ya Oo Oo Bolega - Pushpa.mp3 </li>
+    </ul>
+    
+</body>
+</html>

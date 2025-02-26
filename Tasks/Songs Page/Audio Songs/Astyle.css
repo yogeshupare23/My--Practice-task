@@ -1,0 +1,35 @@
+body{
+    margin: 0px 5%;
+    background-color: lightgrey;
+}
+.c1 h1{
+    text-align: center;
+    color: tomato;
+    background-color: #24ffc8;
+    padding: 10px 15px;
+    text-shadow: 5px 5px 5px #5bb4a5 ;
+    
+}
+.c1{
+    border: 10px solid #ddd;
+    border-left: #eee;
+    border-top: #eee;
+    box-shadow: 10px 10px 5px #aaa;
+    background-color:#2f455c ;
+}
+.c2{
+    margin: 30px 0px;
+    border: 10px solid #aaa;
+    border-left: 5px solid #aaa;
+    border-top:5px solid #aaa;
+    background-color: lightblue;
+    box-shadow: 10px 10px 5px #777;
+}
+.c2 table{
+    width: 100%;
+    text-align: center;
+}
+.c2 table tr td{
+    border-bottom: 5px solid #aaa;
+    padding: 5px;
+}

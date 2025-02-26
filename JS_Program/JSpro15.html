@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <h3>var, let and const</h3>
+        <pre>
+            <strong>var:-</strong>  The scope of the declared with var is its current execution,
+            which is either the enclosing function declared outside any function, golbal.
+            
+            <strong>let:-</strong>  let allows you to variables that are limited in scope to the
+            block, statemant, or expression on which it is used.
+
+            <strong>const:-</strong>  This declaration creates a constant whose scope can be either
+            golbal or local to the block in which it is declared. Golbal constant do not become
+            properties of the window object, unlike var variables. An initializer for a constant
+            is required; that is, you must specify its value in the same statemant in which it's declared
+            which can't be changed later.
+            EX-
+        </pre>
+        <script>
+            //EX 1
+            /*
+            var a = 10;
+            let b = 20;
+            const c = 30;
+
+            document.write(a +"<br>");
+            document.write(b +"<br>");
+            document.write(c +"<br> <hr>");
+            */
+            // Ex 2
+            
+            function myvar(){
+                var a = 10;
+                if(true){
+                    var a = 20;
+                    document.write(a +"<br>");
+                }
+                document.write(a +"<br><hr>");
+            }
+            myvar();
+            
+           // Ex 3
+           function mylet(){
+                let a = 10;
+                if(true){
+                    let a = 20;
+                    document.write(a +"<br>");
+                }
+                document.write(a +"<br>");
+            }
+            mylet();          
+
+
+
+        </script>
+    </body>
+</html>
